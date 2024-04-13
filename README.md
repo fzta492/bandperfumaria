@@ -19,7 +19,7 @@ PostgreSQL
  Clientes;</br>
  Vendas;</br>
  Itens das vendas;</br>
- Pontuação;</br>
+ Pontuação;</br></br>
  Produtos: Representam os perfumes vendidos.</br>
  Clientes: Pessoas que compram produtos.</br>
  Vendas: Transações de compra de produtos pelos clientes.</br>
