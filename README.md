@@ -43,7 +43,7 @@ Ao desenvolver o sistema de gerenciamento de banco de dados para a Band Perfumar
 </br>
 Optei por uma abordagem direta e menos técnica, evitando o uso de triggers para simplificar o sistema. Isso torna mais fácil para quem estiver administrando ou atualizando o banco de dados no futuro. A documentação detalhada que preparei no GitHub visa ajudar qualquer pessoa a entender e modificar o sistema conforme necessário.
 </br>
-Espero que este projeto seja um recurso útil para outros e inspire mais pessoas a explorar e implementar sistemas de banco de dados que apoiam as operações comerciais de maneira eficiente. Estou grato a todos que contribuíram e aprendi muito com este projeto.
+Espero que este projeto seja um recurso útil para outros e inspire mais pessoas a explorar e implementar sistemas de banco de dados que apoiam as operações comerciais de maneira eficiente. Estou grato a todos que me ajudaram de alguma forma e aprendi muito com este projeto.
 </br>
 
 
