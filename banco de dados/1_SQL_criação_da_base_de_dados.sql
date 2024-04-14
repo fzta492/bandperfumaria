@@ -31,7 +31,7 @@ CREATE TABLE vendas (
 );
 
 CREATE TABLE itens_de_venda (
-    id_itemVenda SERIAL PRIMARY KEY,
+    id_item_venda SERIAL PRIMARY KEY,
     id_venda INT NOT NULL,
     id_Produto INT NOT NULL,
     quantidade INT NOT NULL,
