@@ -30,7 +30,6 @@ PostgreSQL
  <h3>Diagrama</h3>
  <br>
  <img width="600" src="https://github.com/fzta492/bandperfumaria/assets/76072907/727c5f2e-38d0-4dd9-a221-2c27e8a086a2"></br>
- Passe o mouse <abbr title="Aqui está sua abreviação em html 5">aqui</abbr>
  <h3>> > > Modelagem física</h3></br>
  Para criar as entidades descritas, foram usado os seguintes comandos na ferramenta PostgreSQL. </br>
  <img width="600" title src="https://github.com/fzta492/bandperfumaria/assets/76072907/98d9304b-5d66-41a6-a528-abddd8b97016">
@@ -39,5 +38,12 @@ PostgreSQL
  <h4>População do DB</h4></br>
  <img width:="600" src="https://github.com/fzta492/bandperfumaria/assets/76072907/81f840d8-11dd-4bea-83e3-d2710b83189d"></br>
  Disponivel em:  <h4><a href="https://github.com/fzta492/bandperfumaria/blob/main/banco%20de%20dados/2_SQL_popula%C3%A7%C3%A3o_do_banco_de_dados.sql"> população da base de dados.sql </a></h4></br>
-Para este projeto a população da base de dados foi feita de forma manual. Para garantir que o total seja sempre atualizado conforme os itens de venda são adicionados ou modificados, é necessário utilizar recursos como triggers no PostgreSQL. Este método irá recalcular automaticamente o total da venda cada vez que um item é inserido, atualizado ou excluído.
-Este método não será abordado nesse projeto.
+<h3>Conclusão do projeto</h3></br>
+Ao desenvolver o sistema de gerenciamento de banco de dados para a Band Perfumaria, procurei criar uma solução prática e eficaz para apoiar a operação de uma loja de perfumes. O uso do PostgreSQL permitiu a criação de um banco de dados relacional focado em facilitar a gestão de estoque, vendas, itens de vendas e o engajamento de clientes através de um sistema de pontos, onde cada real gasto é convertido em pontos de fidelidade.
+</br>
+Optei por uma abordagem direta e menos técnica, evitando o uso de triggers para simplificar o sistema. Isso torna mais fácil para quem estiver administrando ou atualizando o banco de dados no futuro. A documentação detalhada que preparei no GitHub visa ajudar qualquer pessoa a entender e modificar o sistema conforme necessário.
+</br>
+Espero que este projeto seja um recurso útil para outros e inspire mais pessoas a explorar e implementar sistemas de banco de dados que apoiam as operações comerciais de maneira eficiente. Estou grato a todos que contribuíram e aprendi muito com este projeto.
+</br>
+
+
