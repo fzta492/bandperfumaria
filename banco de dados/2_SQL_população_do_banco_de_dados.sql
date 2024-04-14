@@ -8,7 +8,7 @@ INSERT INTO produtos (nome, descricao, preco, quantidade_estoque, estoque_minimo
 ('Noites Calientes', 'Aroma amadeirado com notas de âmbar e pimenta preta.', 60.00, 90, 10, 1),
 ('Orquídea de Guaramiranga', 'Fragrância floral com base de orquídea e musgo.', 65.00, 75, 10, 2),
 ('Sol da meia noite', 'Perfume vibrante com notas de laranja e canela.', 55.00, 85, 10, 1),
-('Chuva de Primavera', 'Sensação refrescante de chuva com toques de grama verde.', 45.00, 95, 10, 2),
+('Chuva de Primavera', 'Sensação refrescante de chuva com toques de grama verde.', 45.00, 95, 10, 2)
 ;
 
 INSERT INTO Clientes (Nome, Email, Telefone) VALUES
