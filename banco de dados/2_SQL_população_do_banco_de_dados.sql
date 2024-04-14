@@ -36,12 +36,16 @@ INSERT INTO itens_de_venda (id_venda, id_produto, quantidade, preco_unidade) VAL
 (2, 2, 3, 70.00),
 (3, 4, 1, 65.00),
 (4, 5, 2, 55.00),
-(5, 1, 1, .00),
-(6, 3, 2, .00),
-(7, 4, 1, .00),
-(8, 1, 3, .00),
-(9, 5, 2, .00),
-(10, 1, 1, .00);
+(5, 1, 1, 50.00),
+(6, 3, 2, 60.00),
+(7, 4, 1, 65.00),
+(8, 1, 3, 50.00),
+(9, 5, 2, 85.00),
+(10, 1, 1, 50.00);
 
-
+INSERT INTO pontuacao_de_clientes (id_cliente, pontos)
+SELECT id_cliente, SUM(total_venda) AS pontos
+FROM vendas
+GROUP BY id_cliente
+ON CONFLICT (id_cliente) DO UPDATE SET pontos = EXCLUDED.pontos;
 
