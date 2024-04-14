@@ -1,3 +1,5 @@
+CREATE DATABASE band;
+
 CREATE TABLE categorias_de_produto (
     id_categoria SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL UNIQUE,
