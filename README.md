@@ -14,7 +14,7 @@ Projeto de sistema de banco de dados desenvolvido para gerenciar as operações 
 <h3>Ferramenta utilizada</h3></br>
 PostgreSQL
 <h3>Modelagem Lógica</h3>
- Para entender os requisitos do banco de dados, precisamos identificar as entidades relacionadas ao negócio band perfumaria. para o projeto, vamos considerar as seguintes entidades:</br>
+ Para entender os requisitos do banco de dados, foi preciso identificar as entidades relacionadas ao negócio band perfumaria. Para o projeto, vamos considerar as seguintes entidades:</br>
  Produtos;</br>
  Clientes;</br>
  Vendas;</br>
@@ -30,5 +30,5 @@ PostgreSQL
  <h3>Diagrama</h3>
  <br>
  <img src="https://github.com/fzta492/bandperfumaria/assets/76072907/727c5f2e-38d0-4dd9-a221-2c27e8a086a2">
-Link (https://github.com/fzta492/bandperfumaria/assets/76072907/727c5f2e-38d0-4dd9-a221-2c27e8a086a2)
+
 
