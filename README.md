@@ -31,9 +31,13 @@ PostgreSQL
  <br>
  <img width="600" src="https://github.com/fzta492/bandperfumaria/assets/76072907/727c5f2e-38d0-4dd9-a221-2c27e8a086a2"></br>
  Passe o mouse <abbr title="Aqui está sua abreviação em html 5">aqui</abbr>
- <h3>Modelagem física</h3></br>
+ <h3>> > > Modelagem física</h3></br>
  Para criar as entidades descritas, foram usado os seguintes comandos na ferramenta PostgreSQL. </br>
  <img width="600" title src="https://github.com/fzta492/bandperfumaria/assets/76072907/98d9304b-5d66-41a6-a528-abddd8b97016">
  </br>
- Disponivel em:  <h4><a href="https://github.com/fzta492/bandperfumaria/blob/main/banco%20de%20dados/1_SQL_cria%C3%A7%C3%A3o_da_base_de_dados.sql"> criação_da_base_de_dados.sql </a></h4>
-
+ Disponivel em:  <h4><a href="https://github.com/fzta492/bandperfumaria/blob/main/banco%20de%20dados/1_SQL_cria%C3%A7%C3%A3o_da_base_de_dados.sql"> criação da base de dados.sql </a></h4></br>
+ <h4>População do DB</h4></br>
+ <img width:="600" src="https://github.com/fzta492/bandperfumaria/assets/76072907/81f840d8-11dd-4bea-83e3-d2710b83189d"></br>
+ Disponivel em:  <h4><a href="https://github.com/fzta492/bandperfumaria/blob/main/banco%20de%20dados/2_SQL_popula%C3%A7%C3%A3o_do_banco_de_dados.sql"> população da base de dados.sql </a></h4></br>
+Para este projeto a população da base de dados foi feita de forma manual. Para garantir que o total seja sempre atualizado conforme os itens de venda são adicionados ou modificados, é necessário utilizar recursos como triggers no PostgreSQL. Este método irá recalcular automaticamente o total da venda cada vez que um item é inserido, atualizado ou excluído.
+Este método não será abordado nesse projeto.
