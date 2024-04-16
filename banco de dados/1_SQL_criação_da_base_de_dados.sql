@@ -1,4 +1,17 @@
-CREATE DATABASE band;
+-- Database: db_band
+
+-- DROP DATABASE IF EXISTS db_band;
+
+CREATE DATABASE db_band
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
 
 CREATE TABLE categorias_de_produto (
     id_categoria SERIAL PRIMARY KEY,
