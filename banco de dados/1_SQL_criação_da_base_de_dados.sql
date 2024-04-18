@@ -71,12 +71,12 @@ INSERT INTO categorias_de_produto (nome, descricao) VALUES
 ('Feminino', 'Perfumes delicados e atraentes para mulheres.');
 
 INSERT INTO produtos (nome, descricao, preco, quantidade_estoque, estoque_minimo, id_categoria) VALUES
-('Brisa do Fortaleza', 'Perfume fresco com notas de sal marinho e algas.', 50.00, 100, 10, 1),
+('Brisa de Fortaleza', 'Perfume fresco com notas de sal marinho e algas.', 50.00, 100, 10, 1),
 ('Rosa de iracema', 'Delicado perfume de rosas com um toque de baunilha.', 70.00, 80, 10, 2),
 ('Noites Calientes', 'Aroma amadeirado com notas de âmbar e pimenta preta.', 60.00, 90, 10, 1),
 ('Orquídea de Guaramiranga', 'Fragrância floral com base de orquídea e musgo.', 65.00, 75, 10, 2),
 ('Sol da meia noite', 'Perfume vibrante com notas de laranja e canela.', 55.00, 85, 10, 1),
-('Chuva de Primavera', 'Sensação refrescante de chuva com toques de grama verde.', 45.00, 95, 10, 2)
+('Chuva no Ceará', 'Sensação refrescante de chuva com toques de grama verde.', 45.00, 95, 10, 2)
 ;
 
 INSERT INTO Clientes (Nome, Email, Telefone) VALUES
@@ -117,9 +117,35 @@ FROM vendas
 GROUP BY id_cliente
 ON CONFLICT (id_cliente) DO UPDATE SET pontos = EXCLUDED.pontos;
 
+-- Criando visualização
+CREATE VIEW relatorio_vendas_detalhadas AS
+SELECT 
+    v.id_venda,
+    v.data_venda,
+    v.total_venda,
+    c.id_cliente,
+    c.nome as nome_cliente,
+    p.id_produto,
+    p.nome as nome_produto,
+    it.quantidade,
+    it.preco_unidade,
+    (it.quantidade * it.preco_unidade) AS subtotal_item,
+	po.pontos AS pontos_totais
+FROM 
+    vendas v
+JOIN 
+    clientes c ON v.id_cliente = c.id_cliente
+JOIN 
+    itens_de_venda it ON v.id_venda = it.id_venda
+JOIN 
+    produtos p ON it.id_produto = p.id_produto
+JOIN
+	pontuacao_de_clientes po ON c.id_cliente = po.id_cliente;
+
 SELECT * FROM pontuacao_de_clientes;
 SELECT * FROM vendas;
 SELECT * FROM categorias_de_produto;
 SELECT * FROM itens_de_venda;
 SELECT * FROM produtos;
 SELECT * FROM clientes;
+SELECT * FROM relatorio_vendas_detalhadas;
