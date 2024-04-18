@@ -9,8 +9,7 @@ INSERT INTO produtos (nome, descricao, preco, quantidade_estoque, estoque_minimo
 	('Noites Calientes', 'Aroma amadeirado com notas de âmbar e pimenta preta.', 60.00, 90, 10, 1),
 	('Orquídea de Guaramiranga', 'Fragrância floral com base de orquídea e musgo.', 65.00, 75, 10, 2),
 	('Sol da meia noite', 'Perfume vibrante com notas de laranja e canela.', 55.00, 85, 10, 1),
-	('Chuva no Ceará', 'Sensação refrescante de chuva com toques de grama verde.', 45.00, 95, 10, 2)
-;
+	('Chuva no Ceará', 'Sensação refrescante de chuva com toques de grama verde.', 45.00, 95, 10, 2);
 
 INSERT INTO Clientes (Nome, Email, Telefone) VALUES
 	('João Silva', 'joao.silva@aaa.com', '8512345670'),
@@ -62,7 +61,7 @@ CREATE VIEW relatorio_vendas_detalhadas AS
 	p.nome as nome_produto,
 	it.quantidade,
 	it.preco_unidade,
-	po.pontos AS pontos_totais
+	po.pontos as pontos_totais
 FROM 
 	vendas v
 JOIN 
